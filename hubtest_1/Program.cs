@@ -11,6 +11,9 @@ namespace hubtest_1
         static void Main(string[] args)
         {
             Console.WriteLine("Hello Git!");
+            Console.ReadKey();
+            Console.WriteLine("Hello Git again!");
+            Console.ReadKey();
         }
     }
 }
