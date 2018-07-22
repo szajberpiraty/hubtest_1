@@ -16,8 +16,8 @@ namespace hubtest_1
             var aValtozo = 20;
             int bValtozo = 40;
 
-            var tomb= new int[6];
-            int[] tomb2 = new int[6] {18,7,4,29,76,34};
+            var tomb = new int[6];
+            int[] tomb2 = new int[6] { 18, 7, 4, 29, 76, 34 };
 
             tomb[0] = 19;
             tomb[1] = 6;
@@ -30,18 +30,42 @@ namespace hubtest_1
             Console.ReadKey();
             Console.WriteLine("Hello Git again!");
             Console.ReadKey();
-            Console.WriteLine("Hello Gitter !{0},{1}",aValtozo,bValtozo);
+            Console.WriteLine("Hello Gitter !{0},{1}", aValtozo, bValtozo);
             Console.ReadKey();
             // egyszerű rendezés
 
-            for(int i=0; i<tomb.Count();i++)
+            tombKiir(tomb);
+
+            var temp = 0;
+            for (int i = 0; i < tomb.Count(); i++)
             {
-                Debug.WriteLine(tomb[i]);
+                //Debug.WriteLine(tomb[i]);
+                for (int j = i + 1; j < tomb.Count(); j++)
+                {
+                    if (tomb[i] > tomb[j])
+                    {
+                        temp = tomb[i];
+                        tomb[i] = tomb[j];
+                        tomb[j] = temp;
+                    }
+                }
+
+
             }
-        
+            tombKiir(tomb);
+            Console.ReadKey();
 
 
 
+
+        }
+
+        private static void tombKiir(int[] tomb)
+        {
+            for (int i = 0; i < tomb.Count(); i++)
+            {
+                Console.WriteLine(tomb[i]);
+            }
         }
     }
 }
