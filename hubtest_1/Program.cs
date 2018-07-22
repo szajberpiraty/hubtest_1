@@ -16,7 +16,14 @@ namespace hubtest_1
             int bValtozo = 40;
 
             var tomb= new int[6];
-            int[] tomb2 = new int[6];
+            int[] tomb2 = new int[6] {18,7,4,29,76,34};
+
+            tomb[0] = 19;
+            tomb[1] = 6;
+            tomb[2] = 3;
+            tomb[3] = 28;
+            tomb[4] = 75;
+            tomb[5] = 33;
 
             Console.WriteLine("Hello Git!");
             Console.ReadKey();
