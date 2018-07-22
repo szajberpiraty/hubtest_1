@@ -14,6 +14,8 @@ namespace hubtest_1
             Console.ReadKey();
             Console.WriteLine("Hello Git again!");
             Console.ReadKey();
+            Console.WriteLine("Hello Gitter !");
+            Console.ReadKey();
         }
     }
 }
