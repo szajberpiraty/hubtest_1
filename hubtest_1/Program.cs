@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -31,6 +32,16 @@ namespace hubtest_1
             Console.ReadKey();
             Console.WriteLine("Hello Gitter !{0},{1}",aValtozo,bValtozo);
             Console.ReadKey();
+            // egyszerű rendezés
+
+            for(int i=0; i<tomb.Count();i++)
+            {
+                Debug.WriteLine(tomb[i]);
+            }
+        
+
+
+
         }
     }
 }
