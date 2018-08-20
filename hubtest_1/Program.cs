@@ -9,12 +9,13 @@ namespace hubtest_1
 {
     class Program
     {
-        
+        public static int cvaltozo; //csak static
 
         static void Main(string[] args)
         {
             var aValtozo = 20;
             int bValtozo = 40;
+            cvaltozo = 40;
 
             var tomb = new int[6];
             int[] tomb2 = new int[6] { 18, 7, 4, 29, 76, 34 };
@@ -26,12 +27,7 @@ namespace hubtest_1
             tomb[4] = 75;
             tomb[5] = 33;
 
-            Console.WriteLine("Hello Git!");
-            Console.ReadKey();
-            Console.WriteLine("Hello Git again!");
-            Console.ReadKey();
-            Console.WriteLine("Hello Gitter !{0},{1}", aValtozo, bValtozo);
-            Console.ReadKey();
+
             // egyszerű rendezés
 
             tombKiir(tomb);
@@ -39,6 +35,8 @@ namespace hubtest_1
             var temp = 0;
             for (int i = 0; i < tomb.Count(); i++)
             {
+
+                Console.WriteLine(bValtozo);
                 //Debug.WriteLine(tomb[i]);
                 for (int j = i + 1; j < tomb.Count(); j++)
                 {
